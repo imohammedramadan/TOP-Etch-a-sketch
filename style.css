@@ -1,0 +1,107 @@
+/* reset */
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	color: var(--font-color);
+	font-family: "Roboto", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* reset */
+
+/* custom properties */
+:root {
+	--background: #121212;
+	--font-color: #ffffff;
+}
+/* custom properties */
+
+body {
+	background-color: var(--background);
+}
+
+/* start main */
+main {
+	margin: 0 auto;
+	width: 70vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sketch-grid {
+	border: 1px solid #ffffff;
+	width: 600px;
+	height: 600px;
+	display: grid;
+}
+.sketch-grid div {
+	border: 1px solid #ffffff;
+}
+
+.sketch-controls {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	padding: 0 40px;
+}
+
+.color-picker-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.color-picker-container label{
+  padding-left: 4px;
+}
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 140px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+	height: 25px;
+	margin: auto;
+}
+
+.erase-btn {
+	cursor: pointer;
+	background-color: var(--background);
+	border: 1px solid #ffffff;
+	font-size: 22px;
+}
+/* end main */

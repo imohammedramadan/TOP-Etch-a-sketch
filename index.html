@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Roboto font import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+
+  <title>Etch a Sketch</title>
+</head>
+
+<body>
+  <main>
+    <div class="sketch-controls">
+      <div class="color-picker-container">
+        <label for="color-picker">Pick a color!</label>
+        <input type="color" class="color-picker" name="color-picker" id="color-picker" value="#00ffff">
+      </div>
+      <div class="slider-container">
+        <input type="range" min="8" max="40" value="16" class="grid-slider">
+        <p class="grid-slider-value"><span>16</span> x <span>16</span></p>
+      </div>
+      <div class="erase-btn-container">
+        <button class="erase-btn">Erase</button>
+      </div>
+    </div>
+    <div class="sketch-grid">
+    </div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+
+</html>
