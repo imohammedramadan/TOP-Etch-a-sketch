@@ -89,14 +89,15 @@ input[type="color"] {
 	-webkit-appearance: none;
 	border: none;
 	width: 140px;
+  height: 32px;
+  border-radius: 14px;
 }
 input[type="color"]::-webkit-color-swatch-wrapper {
-	padding: 0;
+	padding: 5;
 }
 input[type="color"]::-webkit-color-swatch {
-	border: none;
-	height: 25px;
-	margin: auto;
+  border-radius: 14px;
+	height: 20px;
 }
 
 input[type="range"]{
