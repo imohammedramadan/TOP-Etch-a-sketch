@@ -73,18 +73,19 @@ main {
 	flex-direction: column;
 	row-gap: 20px;
 	padding: 0 40px;
+  align-items: center;
 }
 
-.color-picker-container{
+.color-picker-container,
+.slider-container{
   display: flex;
   flex-direction: column;
   row-gap: 5px;
+  align-items: center;
 }
 
-.color-picker-container label{
-  padding-left: 4px;
-}
 input[type="color"] {
+  cursor: pointer;
 	-webkit-appearance: none;
 	border: none;
 	width: 140px;
@@ -98,10 +99,21 @@ input[type="color"]::-webkit-color-swatch {
 	margin: auto;
 }
 
+input[type="range"]{
+  cursor: pointer;
+}
+
 .erase-btn {
+  width: 140px;
+  border-radius: 14px;
 	cursor: pointer;
 	background-color: var(--background);
 	border: 1px solid #ffffff;
 	font-size: 22px;
+}
+.erase-btn:hover{
+  background-color: #00ffff;
+  border: 1px solid #000;
+  color: #000;
 }
 /* end main */
